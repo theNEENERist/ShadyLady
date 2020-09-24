@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LayoutName"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/EditTextFirstName"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:hint="@string/first_name"
+            android:layout_marginRight="5dp"
+            android:inputType="textPersonName"></EditText>
+
+        <EditText
+            android:id="@+id/EditTextLastName"
+            android:layout_width="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"></EditText>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/EditTextEmail"
+        android:layout_width="fill_parent"
+        android:layout_weight="0.5"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextDob"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/LayoutName"></EditText>
+
+    <EditText
+        android:id="@+id/EditTextDob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/dob"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/addressLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextEmail"></EditText>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/addressLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditTextDob"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextNotes">
+
+        <LinearLayout
+            android:id="@+id/addressLine1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/addressLine1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:hint="@string/addressline1"
+                android:inputType="textPostalAddress"
+                android:layout_marginRight="5dp"></EditText>
+
+            <EditText
+                android:id="@+id/City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/city"
+                android:layout_weight=".5"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/addressLine1"></EditText>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/SpinnerState"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:entries="@array/stateList"
+            android:prompt="@string/state"
+            android:layout_marginRight="5dp"
+            android:layout_below="@id/addressLine1Layout"></Spinner>
+
+        <EditText
+            android:id="@+id/zip"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/zip"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            android:layout_toRightOf="@id/SpinnerState"
+            android:layout_below="@id/addressLine1Layout"></EditText>
+
+        <EditText
+            android:id="@+id/epay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/epay"
+            android:layout_marginLeft="5dp"
+            android:inputType="text"
+            android:layout_toRightOf="@id/zip"
+            android:layout_below="@id/addressLine1Layout"></EditText>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/EditTextNotes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/notes"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/profileLayout"
+        app:layout_constraintTop_toBottomOf="@id/addressLayout"
+        ></EditText>
+
+    <LinearLayout
+    android:id="@+id/profileLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:weightSum="1"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/EditTextNotes"
+    app:layout_constraintBottom_toTopOf="@+id/addressLayout">
+
+        <Spinner
+            android:id="@+id/SpinnerGender"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="50dp"
+            android:entries="@array/genderList"
+            android:prompt="@string/gender"></Spinner>
+
+        <EditText
+            android:id="@+id/EditTextPhone"
+            android:inputType="phone"
+            android:digits="0123456789+"
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ButtonSaveClient"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="saveClient"
+        android:text="@string/save"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileLayout"></Button>
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/textInputLayoutFirstName"-->
+    <!--        android:layout_width="409dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutLastName"-->
+    <!--        tools:layout_editor_absoluteX="1dp">-->
+
+    <!--        <EditText-->
+    <!--            android:layout_marginBottom="15dp"-->
+    <!--            android:id="@+id/editTextTextPersonFirstName"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:ems="10"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            android:hint="@string/first_name" />-->
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:id="@+id/textInputLayoutLastName"-->
+    <!--        android:layout_width="409dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutFirstName"-->
+    <!--        app:layout_constraintVertical_bias="0.717"-->
+    <!--        tools:layout_editor_absoluteX="1dp">-->
+
+    <!--        <EditText-->
+    <!--            android:layout_marginBottom="15dp"-->
+    <!--            android:id="@+id/editTextTextPersonLastName"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:ems="10"-->
+    <!--            android:inputType="textPersonName"-->
+    <!--            android:hint="@string/last_name" />-->
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <!--    <com.google.android.material.textfield.TextInputLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutLastName"-->
+    <!--        tools:layout_editor_absoluteX="1dp"-->
+    <!--        tools:layout_editor_absoluteY="139dp">-->
+
+    <!--        <EditText-->
+    <!--            android:id="@+id/editTextDate2"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:ems="10"-->
+    <!--            android:inputType="date"-->
+    <!--            android:hint="@string/dob"/>-->
+
+    <!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

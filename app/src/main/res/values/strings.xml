@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Shady Lady</string>
+    <string name="title_home">Clients</string>
+    <string name="title_dashboard">Inspirations</string>
+    <string name="title_notifications">Appointments</string>
+    <string name="add_client">Add Client</string>
+    <string name="title_activity_add_client">AddClientActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="save">Save</string>
+    <string name="first_name">First Nme</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="dob">Date of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
+    <string name="epay">E-Pay</string>
+    <string name="notes">Notes</string>
+    <string name="state">State</string>
+    <string name="addressline1">Address Line 1</string>
+    <string name="city">City</string>
+    <string name="zip">Zip</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="al">AL</string>
+    <string name="ak">AK</string>
+    <string name="az">AZ</string>
+    <string name="ar">AR</string>
+    <string name="ca">CA</string>
+    <string name="co">CO</string>
+    <string name="ct">CT</string>
+    <string name="de">DE</string>
+    <string name="fl">FL</string>
+    <string name="ga">GA</string>
+    <string name="hi">HI</string>
+    <string name="id">ID</string>
+    <string name="il">IL</string>
+    <string name="in">IN</string>
+    <string name="ia">IA</string>
+    <string name="ks">KS</string>
+    <string name="ky">KY</string>
+    <string name="la">LA</string>
+    <string name="me">ME</string>
+    <string name="md">MD</string>
+    <string name="ma">MA</string>
+    <string name="mi">MI</string>
+    <string name="mn">MN</string>
+    <string name="ms">MS</string>
+    <string name="mo">MO</string>
+    <string name="mt">MT</string>
+    <string name="ne">NE</string>
+    <string name="nv">NV</string>
+    <string name="nh">NH</string>
+    <string name="nj">NJ</string>
+    <string name="nm">NM</string>
+    <string name="ny">NY</string>
+    <string name="nc">NC</string>
+    <string name="nd">ND</string>
+    <string name="oh">OH</string>
+    <string name="ok">OK</string>
+    <string name="or">OR</string>
+    <string name="pa">PA</string>
+    <string name="ri">RI</string>
+    <string name="sc">SC</string>
+    <string name="sd">SD</string>
+    <string name="tn">TN</string>
+    <string name="tx">TX</string>
+    <string name="ut">UT</string>
+    <string name="vt">VT</string>
+    <string name="va">VA</string>
+    <string name="wa">WA</string>
+    <string name="wv">WV</string>
+    <string name="wi">WI</string>
+    <string name="wy">WY</string>
+
+
+</resources>

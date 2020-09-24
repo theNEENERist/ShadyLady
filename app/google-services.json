@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "579767704889",
+    "firebase_url": "https://shady-lady.firebaseio.com",
+    "project_id": "shady-lady",
+    "storage_bucket": "shady-lady.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579767704889:android:e2bcf324a2b0c013959ce8",
+        "android_client_info": {
+          "package_name": "com.personal.shadylady"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "579767704889-d3lg1if1nii9g1mk82hodbdullfnag2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATtJiCWu5p9HFJny4qgSvZajUSlWolNfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "579767704889-d3lg1if1nii9g1mk82hodbdullfnag2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genderList">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+    <string-array name="stateList">
+        <item>@string/al</item>
+        <item>@string/ak</item>
+        <item>@string/az</item>
+        <item>@string/ar</item>
+        <item>@string/ca</item>
+        <item>@string/co</item>
+        <item>@string/ct</item>
+        <item>@string/de</item>
+        <item>@string/fl</item>
+        <item>@string/ga</item>
+        <item>@string/hi</item>
+        <item>@string/id</item>
+        <item>@string/il</item>
+        <item>@string/in</item>
+        <item>@string/ia</item>
+        <item>@string/ks</item>
+        <item>@string/ky</item>
+        <item>@string/la</item>
+        <item>@string/me</item>
+        <item>@string/md</item>
+        <item>@string/ma</item>
+        <item>@string/mi</item>
+        <item>@string/mn</item>
+        <item>@string/ms</item>
+        <item>@string/mo</item>
+        <item>@string/mt</item>
+        <item>@string/ne</item>
+        <item>@string/nv</item>
+        <item>@string/nh</item>
+        <item>@string/nj</item>
+        <item>@string/nm</item>
+        <item>@string/ny</item>
+        <item>@string/nc</item>
+        <item>@string/nd</item>
+        <item>@string/oh</item>
+        <item>@string/ok</item>
+        <item>@string/or</item>
+        <item>@string/pa</item>
+        <item>@string/ri</item>
+        <item>@string/sc</item>
+        <item>@string/sd</item>
+        <item>@string/tn</item>
+        <item>@string/tx</item>
+        <item>@string/ut</item>
+        <item>@string/vt</item>
+        <item>@string/va</item>
+        <item>@string/wa</item>
+        <item>@string/wv</item>
+        <item>@string/wi</item>
+        <item>@string/wy</item>
+    </string-array>
+</resources>
